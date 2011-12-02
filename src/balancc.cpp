@@ -48,8 +48,8 @@ int main( int argc, char *argv[] )
 
   signal( SIGINT, sighandler );
 
-  int nextarg = 1;
-  for( ; nextarg < argc; nextarg++ )
+  int nextarg;
+  for( nextarg = 1; nextarg < argc; nextarg++ )
   {
     if( strcmp( "-s", argv[nextarg] ) == 0 ) // server
     {
